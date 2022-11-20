@@ -14,7 +14,7 @@ public class PageBase {
     private WebDriver driver;
     private WebDriverWait webDriverWait;
 
-    public PageBase(WebDriver driver) {
+    protected PageBase(WebDriver driver) {
         this.driver = driver;
         this.webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(MAX_TIMEOUT));
     }
